@@ -385,6 +385,7 @@ nav {
         width: 90%;
         text-align: center;
         margin-left: 80px;
+        font-size: 0.8rem;
         opacity: 1; /* Ensure text is visible */
         transform: translateX(0); /* Reset any offset */
         transition: none; /* Remove transition to make text visible immediately */
