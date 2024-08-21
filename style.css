@@ -375,10 +375,11 @@ nav {
     }
 
     .slide img {
-        width: 70%;
-        height: 50%;
+        width: 100%; /* Use full width available */
+        height: auto; /* Maintain aspect ratio */
         max-width: 300px;
-        margin: 0 auto 20px;
+        margin: 0 auto;
+        object-fit: cover; /* Ensure the image fits within the box */
     }
 
     .slide-text {
