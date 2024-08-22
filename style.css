@@ -186,7 +186,7 @@ nav {
 
 .projecttitle {
     margin-bottom: 30px;
-    margin-top: 200px;
+    margin-top: 80px;
 }
 
 .slider {
@@ -377,18 +377,32 @@ nav {
     .slide img {
         width: 100%; /* Use full width available */
         height: auto; /* Maintain aspect ratio */
+        max-height: 150px;
         max-width: 300px;
         margin: 0 auto;
         object-fit: cover; /* Ensure the image fits within the box */
     }
-
+    
+    
     .slide-text {
         width: 90%;
         text-align: center;
         margin-left: 80px;
-        font-size: 0.8rem;
+        margin-top: 20px;
+        font-size: 0.7rem;
         opacity: 1; /* Ensure text is visible */
         transform: translateX(0); /* Reset any offset */
         transition: none; /* Remove transition to make text visible immediately */
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.986);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
     }
 }
