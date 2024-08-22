@@ -214,7 +214,7 @@ nav {
 
 .slide img {
     width: 50%;
-    height: 50%;
+    height: 70%;
     border-radius: 10px;
     margin-left: 150px;
     transition: opacity 1s ease, transform 1s ease;
