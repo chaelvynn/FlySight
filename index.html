@@ -4,160 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sessario's Portofolio</title>
+    <title>FlySight</title>
 </head>
 <body>
     <nav>
-        <div class="navname"><h2>Sessario Ammar Wibowo</h2></div>
+        <div class="navname"><h2>Fly Sight</h2></div>
         <ul class="navchoices">
             <li class="navItems"><a href="#aboutme">About</a></li>
-            <li class="navItems"><a href="#sliders">Projects</a></li>
+            <li class="navItems"><a href="#procedures">Procedures</a></li>
         </ul>
     </nav>
 
-    <div class="intro">
-        <div class="introimg">
-            <img src="Assets\Sessario Ammar Wibwo.jpg" alt="">
-        </div>
-        <div class="introtxt" id="intro">
-            <div class="introname"><h4>Hello, I am Sessario Ammar Wibwo</h4></div>
-            <div class="introRole"><h4>Undergraduate Computer Science Student </h4></div>
-            <div class="introbtn">
-                <a href="Assets\Sessario Ammar Wibowo CV.docx" download="Sessario Ammar Wibowo CV.docx">
-                    <button class="introbtnchild">Download CV</button>
-                </a>
-                <a href="https://www.linkedin.com/in/sessario-ammar-wibowo" target="_blank">
-                    <button class="introbtnchild">LinkedIn</button>
-                </a>
+    <div class="slider" id="flySightSlider">
+        <div class="slide">
+            <video controls>
+                <source src="Assets/product.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="slide-text">
+                <h2>FlySight</h2>
+                <p>FlySight is an Artificial Intelligence-based drone system designed to follow a person according to a pre-set target, combining two key components: the drone and the Ground Control System (GCS). The GCS stores facial data necessary for face detection, allowing the drone to recognize and track individuals.</p>
+                <p>This technology can be used for both security and entertainment purposes. In the entertainment industry, FlySight excels in capturing dynamic shots in dangerous or challenging environments, such as filming action scenes where synchronized movement between the actor and camera is crucial.</p>
+                <p>FlySight automates drone control, enhancing safety, efficiency, and accuracy, particularly in fast-paced environments like film production or live events. The system processes data from onboard sensors, including cameras, through the GCS, which then adjusts the drone's position to maintain a safe and precise distance from detected objects, such as people or vehicles.</p>
             </div>
         </div>
     </div>
 
+    <div class="video-container">
+        <video autoplay muted loop id="promoVideo">
+            <source src="Assets/promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-        <div class="abouttitle" id="aboutme"><h1>About Me</h1></div>
-
-        <div class="aboutme">
-                <div class="aboutimg">
-                    <img src="Assets\Portimage.jpg" alt="">
-                </div>
-                <div class="aboutcontainer">
-                    <div class="aboutcon">
-                        <div class="aboutexdu">
-                                <div class="symbols"><p>&#11088;</p></div>
-                                <h3>Experience</h3>
-                                <p>0 months experience</p>
-                        </div>
-                        <div class="aboutexdu">
-                            <div class="symbols"><p>&#128214;</p></div>
-                                <h3>Education</h3>
-                                <p>Computer Science undergradute</p>
-                        </div>
-                    </div>
-                    <div class="aboutdesc">
-                        <p>
-                            "Hi! I'm Sessario Ammar Wibowo, a 5th-semester computer science student at Bina Nusantara University, aspiring to be a software engineer. I'm passionate about enhancing my full-stack skills and applying them to real-world projects. As an active member of BNEC and the president of BNEC Bandung, I enjoy developing leadership and talent.
-                        <p>
-                            With experience in Python, Java, JavaScript, PHP, and C, I’ve worked on projects like a Tkinter-based face recognition GUI for a DJI Tello Drone and a Flask web app deploying a deep learning model. I'm excited to collaborate and keep learning!"
-                        </p>
-                    </div>
-                </div>
+    <div class="procedures" id="procedures">
+        <div class="projecttitle">
+            <h1>Procedures</h1>
         </div>
-
-        <div class="projects" id="projects">
-            <div class="projecttitle">
-                <h1>Projects</h1>
-            </div>
-        <div class="slider" id="sliders">
+        <div class="slider" id="projectsSlider">
             <div class="slides">
-              
                 <div class="slide">
-                    <img src="Assets\Respitune.jpg" alt="Project 1">
+                    <img src="Assets/GCS1.jpg" alt="Procedure 1">
                     <div class="slide-text">
-                        <h2>Respitune</h2>
-                        <p>This web-app deploys a deep learning model to predict respiratory sickness through the breathing sound of the clients by analyzing wheezes and crackles pattern</p>
-                        <p>This was a group project and class assignment, my role was both front-end and back-end in developing the app. I developed the deep-learning model, integrated all of the html pages, dealt with the backend, and cleaned the designs so they are in unison and work accordingly</p>
-                        <P>From this project, i have learned how to deploy deep-learning model locally, how important it is to have the whole team understand the stack used, and how much learning a new framework can teach you</P>
-                        <p>Tech Stack: Flask, Python, Javascript, Bootstrap, MySQL</p>
+                        <h2>Preparation and Initial Setup:</h2>
+                        <p>Drone Readiness: Ensure that the drone is fully charged and all components, including the camera, sensors, and communication systems, are securely attached and functioning correctly. Conduct a thorough inspection of all hardware to prevent any operational issues during the flight.</p>
+                        <p>Connection to Ground Control Station (GCS): Connect the drone to the Ground Control Station via a Wi-Fi signal. This connection is essential for transmitting data between the drone and the GCS.</p>
+                        <p>Software Verification: The operator must check the connection status and ensure that the GCS software is up and running, ready to receive data from the drone. This includes verifying that the user interface displays the correct flight parameters and settings.</p>
+                        <p>Calibration: Perform necessary calibrations for the sensors and camera to ensure accurate data collection during flight. This may include compass calibration, gyroscope calibration, and testing the camera's focus and angles.</p>
                     </div>
                 </div>
-             
                 <div class="slide">
-                    <img src="Assets\Ibalance.jpg" alt="Project 2">
+                    <img src="Assets/GCS2.jpg" alt="Procedure 2">
                     <div class="slide-text">
-                        <h2>IBalance</h2>
-                        <p>This web-app deploys a simple machine learning model to predict client's stress tolerance level so that the clients can find the right working environment to work in.</p>
-                        <p>This was a self initiated group project for a competition, i played the role of the backend, where i dealt with making the simple machine learning model and the core functionality of the program</p>
-                        <P>From this project, i have learned how important it is to learn git, we finished this project without using git so there are some technical issues. I also learned how important it is that, regardless of your role, you need to understand both backend and frontend to an extent</P>
-                        <p>Tech Stack: PHP vanila, Javascript</p>
+                        <h2>Operation and Flight:</h2>
+                        <p>Flight Initiation: Once all preparations are completed and verified, the operator can initiate the flight by sending commands from the GCS. The drone will take off and begin its predefined flight path.</p>
+                        <p>Data Collection: During the flight, the drone will collect data from the surrounding environment using its onboard sensors and cameras. This may include environmental conditions, images, and video footage.</p>
+                        <p>Object Detection and Positioning: As the drone flies, it will automatically detect nearby objects through its sensors. The system will process this information in real-time to adjust the drone's position accordingly, maintaining a safe distance from detected objects, such as people, vehicles, or obstacles.</p>
+                        <p>Dynamic Flight Adjustments: The drone's flight path may be dynamically altered based on real-time data analysis to enhance safety and effectiveness. This ensures optimal performance in varying conditions and environments.</p>
                     </div>
                 </div>
-                
                 <div class="slide">
-                    <img src="Assets\dronenes.jpg" alt="Project 3">
+                    <img src="Assets/GCS3.jpg" alt="Procedure 3">
                     <div class="slide-text">
-                        <h2>Stalker</h2>
-                        <p>An autonomous drone that follows target that has its face recognized, additionally this drone can be manually controlled. </p>
-                        <p>This was a self initiated group project, a team that represents Binus in the national competition KRTI in the TD division. I played the role of integration and core functionality. I developed the manual controls, GUI Tinker design, the function that the camera uses to approximate the distance and also to follow the target autonomously. Additionally, aside from integrating the face recognition model, I applied multi threading to the program to enhance performance.</p>
-                        <P>From this project, I learned how to increase efficiency in python programs, dealing with multi-threading and a lot more methods. And I learned how drone works and a deeper undertanding of how advanced face recognition algorithm works</P>
-                        <p>Tech Stack: Python, DJTello Drone</p>
+                        <h2>Monitoring and Data Analysis:</h2>
+                        <p>Real-Time Monitoring: The operator can monitor real-time data displayed on the GCS screen, including live video feeds, telemetry information, and critical flight parameters such as altitude, speed, and battery status.</p>
+                        <p>Data Analysis: Based on the incoming data, the operator can perform analysis to assess the drone's performance and the environment it is navigating. This may involve identifying patterns, detecting anomalies, or ensuring that the mission objectives are being met.</p>
+                        <p>Decision-Making: Utilizing the data received, the operator can make informed decisions, such as changing the flight path to avoid obstacles, re-routing the drone to explore different areas, or instructing the drone to approach or move away from specific objects based on the mission requirements.</p>
+                        <p>Post-Flight Review: After the flight, data collected during the mission can be reviewed and analyzed for further insights. This information can inform future missions and improve operational strategies.</p>
                     </div>
                 </div>
             </div>
             <button class="prev" onclick="prevSlide()">&#10094;</button>
             <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-        </div>
+    </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const elements = document.querySelectorAll('.intro, .abouttitle, .aboutme, .aboutcon, .aboutexdu, .projects, .slider, .slide img, .slide-text');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.intro, .abouttitle, .aboutme, .aboutcon, .aboutexdu, .procedures, .slider, .slide img, .slide-text');
 
-                const fadeInOnScroll = () => {
-                    elements.forEach(el => {
-                        const rect = el.getBoundingClientRect();
-                        if (rect.top < window.innerHeight - 50 && rect.bottom >= 0) {
-                            el.classList.add('fade-in');
-                        } else {
-                            el.classList.remove('fade-in');
-                        }
-                    });
-                };
+            const fadeInOnScroll = () => {
+                elements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50 && rect.bottom >= 0) {
+                        el.classList.add('fade-in');
+                    } else {
+                        el.classList.remove('fade-in');
+                    }
+                });
+            };
 
-                window.addEventListener('scroll', fadeInOnScroll);
-                fadeInOnScroll(); 
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); 
+        });
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('#projectsSlider .slide'); // Select only slides in the procedures section
+            const totalSlides = slides.length;
+
+            slides.forEach(slide => {
+                slide.classList.remove('slide-active'); // Remove active class from all slides
             });
 
-            let currentSlide = 0;
-
-            function showSlide(index) {
-                const slides = document.querySelectorAll('.slide');
-                const totalSlides = slides.length;
-
-                slides.forEach(slide => {
-                    slide.classList.remove('slide-active'); // Remove active class from all slides
-                });
-
-                if (index >= totalSlides) {
-                    currentSlide = 0;
-                } else if (index < 0) {
-                    currentSlide = totalSlides - 1;
-                } else {
-                    currentSlide = index;
-                }
-
-                slides[currentSlide].classList.add('slide-active'); // Add active class to the current slide
-                document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
             }
 
-            function nextSlide() {
-                showSlide(currentSlide + 1);
-            }
+            slides[currentSlide].classList.add('slide-active'); // Add active class to the current slide
+            document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
 
-            function prevSlide() {
-                showSlide(currentSlide - 1);
-            }
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
 
-            showSlide(currentSlide);
-        </script>
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        showSlide(currentSlide);
+    </script>
 </body>
 </html>
